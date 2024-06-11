@@ -2,18 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #191f36;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
+    scroll-behavior: smooth;
     list-style: none;
 }
-
+/*
+:root{
+    --bg-color: #191f36;
+    --snd-bf-color: #262B40;
+    --text-color: #fff;
+    --main-color: #59B2F4;
+}
+*/
 .header{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 35px 12%;
-    background: #5630CF;
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
@@ -29,18 +37,18 @@
 }
 
 .logo:hover{
-    color: #30CF56;
-    text-shadow: 0 0 25px #30CF56,
-                 0 0 50px #30CF56;
+    color: #5630CF;
+    text-shadow: 0 0 25px #5630CF,
+                 0 0 50px #5630CF;
     transform: scale(1.1);
 }
 
 span{
-    color: #30CF56;
+    color: #59B2F4;
 }
 
 .huh{
-    color: #CF5630;
+    color: #59B2F4;
 }
 .navbar a{
     font-size: 18px;
@@ -55,13 +63,13 @@ span{
 .navbar a.active{
     color: #30CF56;
     border-bottom: 3px solid #30CF56;
+    letter-spacing: 1px;
 }
 
 .contact{
     padding: 10px 28px;
-    background-color: silver;
-    color: black;
-    border: 2px solid transparent;
+    color: #59B2F4;
+    border: 2px solid black;
     border-radius: 15px;
     font-size: 16px;
     letter-spacing: 1px;
@@ -70,15 +78,13 @@ span{
 }
 
 .contact:hover{
-    background-color: #30CF56;
-    box-shadow: 0 0 25px #30CF56;
-    color: white;
+    background-color: black;
+    color: #5630CF;
 }
 
 .home{
     width: 100%;
     min-height: 100vh;
-    background: #30CF56;
     display: flex;
     align-items: center;
     gap: 7em;
@@ -111,8 +117,7 @@ span{
 
 .btn-1{
     padding: 15px 15px;
-    background-color: silver;
-    color: #CF5630;
+    color: #59B2F4;
     border: 2px solid black;
     border-radius: 500px;
     font-size: 20px;
@@ -124,14 +129,13 @@ span{
 
 .btn-1:hover{
     background-color: black;
-    color: #30CF56;
+    color: #5630CF;
     border: 2px solid black;
 }
 
 .btn-2{
     padding: 15px 15px;
-    background-color: silver;
-    color: #CF5630;
+    color: #59B2F4;
     border: 2px solid black;
     border-radius: 500px;
     font-size: 20px;
@@ -143,11 +147,152 @@ span{
 
 .btn-2:hover{
     background-color: black;
-    color: #30CF56;
+    color: #5630CF;
     border: 2px solid black;
 }
 
 .img-box img{
     border-radius: 50%;
     width: 600px;
+    animation: floatImage 4s ease-in-out infinite;
+    box-shadow: 0 0 25px black,
+                0 0 50px black;
 }
+
+@keyframes floatImage{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #CF5630;
+}
+
+::-webkit-scrollbar-track{
+    background-color: black;
+    width: 50px;
+}
+
+/*ABOUT SECTION*/
+.about{
+    padding: 35px 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-img img{
+    margin-top: 150px;
+    border-radius: 8%;
+    width: 30vw;
+    animation: sideward 4s ease-in-out infinite;
+    box-shadow: 0 0 25px black,
+                0 0 50px black;
+}
+
+@keyframes sideward{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-2.4rem);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+.heh{
+    color: #59B2F4;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.drake{
+    color: #59B2F4;
+}
+
+.about-content h2{
+    text-align: center;
+    line-height: 1.2;
+}
+
+.about-content h3{
+    text-align: center;
+    font-size: 2.6rem;
+}
+
+.about-content p{
+    font-size: 1.6rem;
+    margin: 2rem 3rem;
+}
+
+/*SKILL SECTION*/
+.skill{
+    color: #FFFFFF;              
+    margin: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 4px solid black;
+    height: 200px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.ms{
+    padding: 50px;
+    margin-top: 150px;
+}
+
+.ms h1{
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.ms h2{
+    color: #59B2F4;
+    text-align: center;
+    font-size: 2.6rem;
+}
+
+.ms p{
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.socials{
+    text-align: center;
+}
+
+.socials{
+    margin: 10px 0;
+}
+    */
