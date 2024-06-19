@@ -8,20 +8,13 @@
     scroll-behavior: smooth;
     list-style: none;
 }
-/*
-:root{
-    --bg-color: #191f36;
-    --snd-bf-color: #262B40;
-    --text-color: #fff;
-    --main-color: #59B2F4;
-}
-*/
+
 .header{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 35px 12%;
+    padding: 20px 12%;
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
@@ -89,6 +82,7 @@ span{
     align-items: center;
     gap: 7em;
     padding: 30px 12% 0;
+    padding-top: 100px;
 }
 
 .home-content{
@@ -187,6 +181,7 @@ span{
 /*ABOUT SECTION*/
 .about{
     padding: 35px 12%;
+    padding-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,6 +190,7 @@ span{
 
 .about-img img{
     margin-top: 150px;
+    margin-right: 100px;
     border-radius: 8%;
     width: 30vw;
     animation: sideward 4s ease-in-out infinite;
@@ -251,11 +247,11 @@ span{
     border-radius: 5px;
     border: 4px solid black;
     height: 200px;
-    transition: transform 0.3s, background-color 0.3s;
 }
 
 .ms{
     padding: 50px;
+    padding-top: 100px;
     margin-top: 150px;
 }
 
@@ -272,4 +268,50 @@ span{
 
 .ms p{
     font-size: 1.5rem;
+}
+
+/*EXPERIENCE SECTION*/
+.xp{
+    color: black;
+    margin-top: 150px;
+    padding: 1em;
+    padding-top: 100px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.xp h1{
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.experience{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.xp-img{
+    width: 250px;
+    height: 300px;
+    border: 4px solid black; 
+    border-radius: 5px;
+}
+
+.experience h2{
+    color: #59B2F4;
+    text-align: center;
+    font-size: 2.6rem;
+}
+
+.experience p{
+    font-size: 1.5rem;
+}
+
+.socials{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px 0;
+    padding-top: 100px;
 }
