@@ -13,9 +13,8 @@
     color: black;              
     margin: 15px;
     padding: 10px 20px;
-    height: auto; /* Adjust height as needed */
-    transition: transform 0.3s, background-color 0.3s;
-    text-align: center; /* Center align content */
+    height: auto;
+    text-align: center;
 }
 
 .project span {
