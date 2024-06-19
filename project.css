@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #191f36;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+.project {
+    color: black;              
+    margin: 15px;
+    padding: 10px 20px;
+    height: auto; /* Adjust height as needed */
+    transition: transform 0.3s, background-color 0.3s;
+    text-align: center; /* Center align content */
+}
+
+.project span {
+    color: #59B2F4;
+}
+
+.project h1 {
+    font-size: 4.5rem;
+}
+
+.proj-img, .proj-img1, .proj-img2{
+    display: block;
+    margin: 0 auto;
+    width: 650px;
+    height: auto;
+    border: 4px solid black; 
+    border-radius: 5px;
+}
+
+.project h2 {
+    color: #59B2F4;
+    font-size: 2.6rem;
+}
+
+.project p {
+    font-size: 1.5rem;
+}
+
+.return-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    color: #59B2F4;
+    border: 2px solid black;
+    border-radius: 500px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.return-button:hover {
+    background-color: black;
+    color: #5630CF;
+    border: 2px solid black;
+}
